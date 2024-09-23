@@ -1,0 +1,57 @@
+
+/* This CSS is for my index and Professional Page*/
+
+/* Changes the color of my webpage background*/
+body {
+	Background-color: #252d5d;>                         
+	font-family: "Times New Roman",serif;
+}
+
+
+.resize-image{
+	display:block;
+	margin-right:auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+
+/* Center align images */
+/*.resize-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+} */
+
+ul.navbar {  
+	list-style-type: none; /* Removes bullet points */
+	margin: 0; /* Removes default margin */
+	padding: 0; /* Removes default padding */
+}
+
+
+ul.navbar li {
+  float: right; /* Aligns list items to the right */
+}
+
+
+ul.navbar li a {
+  display: block; /* Makes the links block-level */
+  color: red; /* Sets text color to white */
+  text-align: center; /* Centers the text */
+  padding: 14px 20px; /* Adds padding around the links */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 18px;
+  
+}
+
+
+/* Change the link background color on hover */
+ul.navbar li a:hover {
+  background-color: #111; /* Changes background color when hovered */
+}
+
+
+
