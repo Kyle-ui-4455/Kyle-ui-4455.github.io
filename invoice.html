@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Solutions - Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Invoice</h1>
+    </header>
+
+    <main>
+        <section id="invoiceDetails">
+            <h2>Order Summary</h2>
+            <ul id="productList"></ul>
+            <p>Subtotal: $<span id="subtotal"></span></p>
+            <p>Tax: $<span id="tax"></span></p>
+            <p>Total: $<span id="total"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Furniture Solutions</p>
+    </footer>
+
+    <script>
+        // Retrieve cart and total values from localStorage
+        const cartItems = JSON.parse(localStorage.getItem('cartItems'));
+        const subtotal = localStorage.getItem('subtotal');
+        const tax = localStorage.getItem('tax');
+        const total = localStorage.getItem('total');
+
+        // Display cart items
+        const productList = document.getElementById('productList');
+        cartItems.forEach(item => {
+            let listItem = document.createElement('li');
+            listItem.innerText = `${item.name} - $${item.price}`;
+            productList.appendChild(listItem);
+        });
+
+        // Display subtotal, tax, and total
+        document.getElementById('subtotal').innerText = subtotal;
+        document.getElementById('tax').innerText = tax;
+        document.getElementById('total').innerText = total;
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+	font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+#productList img {
+    width: 200px; /* Adjust size to your preference */
+    height: 200px; /* Maintain aspect ratio */
+    filter: drop-shadow(0 50px 20px #0009); /* Drop shadow effect */
+}
+
+#productList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adds space between grid items */
+	font-size: 18px;
+}
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+section#login {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section#login h2 {
+    text-align: center;
+}
+
+input {
+    margin: 20px 0;
+    border-radius: 20px; /* Increase this value for a more oval look */
+    padding: 10px; /* Adjust for better appearance */
+    border: 1px solid #ccc; /* Optional border */
+	outline: none;
+}
+
+a{
+    text-decoration: none; /* Remove underline */
+}
+
+a.hover { 
+		 text-decoration: underline;	
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+	font-size: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#errorMsg {
+    color: red;
+    font-weight: bold;
+}
+
+/* Codes For My Services */
+
+
+#services {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+	font-size: 18px;
+}
+
+.service {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.service button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.service button:hover {
+    background-color: #45a049;
+}
+
+
